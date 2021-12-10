@@ -12,23 +12,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <section class="welcome position-relative">
-        <img class="position-absolute"
-            src="/assets/Logo-C4T-verde.png"
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
             style="top:40px;left:180px;" />
-            <img class="position-absolute"
-            src="/assets/Logo-Comply4Tech-vertical1.png"
-            style="top:350px;right:180px;" />
-        <button class="btn position-absolute" style="top:50px;right:180px;" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
-                src="https://img.icons8.com/ios-filled/50/373a36/menu--v1.png" /></button>
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical1.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/373a36/menu--v1.png" /></button>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 welcome-text text-uppercase">
+            <div class="row" data-aos="fade-right">
+                <div class="col-12 col-md-6 welcome-text text-uppercase">
                     <div class="underline underline-less">Bem-</div>
                     <div class="underline">vindo</div>
                 </div>
@@ -37,18 +37,16 @@
     </section>
 
     <section class="enterprise position-relative">
-        <img class="position-absolute"
-            src="/assets/Logo-C4T-verde.png"
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
             style="top:40px;left:180px;" />
-            <img class="position-absolute"
-            src="/assets/Logo-Comply4Tech-vertical1.png"
-            style="top:350px;right:180px;" />
-        <button class="btn position-absolute" style="top:50px;right:180px;" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
-                src="https://img.icons8.com/ios-filled/50/373a36/menu--v1.png" /></button>
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical1.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/373a36/menu--v1.png" /></button>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 enterprise-text">
+            <div class="row" data-aos="fade-right">
+                <div class="col-12 col-md-6 enterprise-text">
                     <h2 class="text-uppercase mb-5 fw-normal enterprise-title">A empresa</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora
                         asperiores, molestias
@@ -69,27 +67,40 @@
     </section>
 
     <section class="workers position-relative">
-        <img class="position-absolute"
-            src="/assets/Logo-C4T-nude.png"
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-nude.png"
             style="top:40px;left:180px;" />
-                <img class="position-absolute"
-            src="/assets/Logo-Comply4Tech-vertical2.png"
-            style="top:350px;right:180px;" />
-        <button class="btn position-absolute" style="top:50px;right:180px;" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
-                src="https://img.icons8.com/ios-filled/50/d9e1e2/menu--v1.png" /></button>
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical2.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/d9e1e2/menu--v1.png" /></button>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-right">
                 <div class="col-7 workers-text">
                     <h2 class="text-uppercase mb-5 fw-normal workers-title">
-                        <div class="underline-workers underline-workers-less">Equipe/</div>
+                        <div class="underline-workers underline-workers-less mb-4 mb-md-0">Equipe/</div>
                         <div class="underline-workers">Parceiros</div>
                     </h2>
                     <div class="pt-4 d-flex">
-                        <div style="background:url('/assets/Foto1.png');height:340px;width:540px;"></div>
-                        <div style="background:url('/assets/Foto2.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;"></div>
-                        <div style="background:url('/assets/Foto3.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;"></div>
-                        <div style="background:url('/assets/Foto4.png');background-repeat:no-repeat;background-size:cover;height:340px;width:540px;"></div>
+                        <div class="worker-member position-relative"
+                            style="background:url('/assets/Foto1.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;">
+                            <div class="position-absolute worker-info"></div>
+                        </div>
+                        <div class="worker-member position-relative"
+                            style="background:url('/assets/Foto2.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;">
+                            <div class="position-absolute worker-info"></div>
+                        </div>
+                        <div class="worker-member position-relative"
+                            style="background:url('/assets/Foto3.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;">
+                            <div class="position-absolute text-center text-uppercase worker-info d-flex flex-column justify-content-center align-items-center fw-bold">
+                                <p class="worker-name mb-0">Aline Cafruni Gularte</p>
+                                <p class="worker-charge">Consultora Externa</p>
+                            </div>
+                        </div>
+                        <div class="worker-member position-relative"
+                            style="background:url('/assets/Foto4.png');background-repeat:no-repeat;background-size:cover;height:340px;width:540px;">
+                            <div class="position-absolute worker-info"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,24 +108,22 @@
     </section>
 
     <section class="acting position-relative">
-        <img class="position-absolute"
-            src="/assets/Logo-C4T-branco.png"
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-branco.png"
             style="top:40px;left:180px;" />
-            <img class="position-absolute"
-            src="/assets/Logo-Comply4Tech-vertical.png"
-            style="top:350px;right:180px;" />
-        <button class="btn position-absolute" style="top:50px;right:180px;" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
-                src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" /></button>
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/ffffff/menu--v1.png" /></button>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-right">
                 <div class="col-6 acting-text">
                     <h2 class="text-uppercase mb-5 fw-normal acting-title">
                         <div class="underline-acting underline-acting-less mb-3">Áreas de</div>
                         <div class="underline-acting">Atuação</div>
                     </h2>
                 </div>
-                <div class="col-2 acting-text-list">
+                <div class="col-12 col-md-2 acting-text-list">
                     <ul class="list-unstyled">
                         <li class="mb-4 arrow-hover-effect">Compliance e Governança Corporativa</li>
                         <li class="mb-4 arrow-hover-effect">Empresarial</li>
@@ -124,6 +133,111 @@
                         <li class="arrow-hover-effect">Startups, Empresas de TI e de Entretenimento</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events position-relative">
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
+            style="top:40px;left:180px;" />
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical1.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/373a36/menu--v1.png" /></button>
+        <div class="container-fluid">
+            <div class="row" data-aos="fade-right">
+                <div class="col-6 events-text mb-3">
+                    <h2 class="text-uppercase mb-5 fw-normal events-title">
+                        <div class="underline-events">Eventos</div>
+                    </h2>
+                </div>
+                <div class="col-8 col-lg-11 col-xl-8">
+                    <div id="gallery">
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1639084695940-40546c3262c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item mb-2"
+                                src="https://images.unsplash.com/photo-1639084695940-40546c3262c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                            <div class="position-absolute text-uppercase text-center gallery-info d-flex flex-column justify-content-center align-items-center fw-bold">
+                                <p class="gallery-name mb-0">Palestra "Startups e Empresas de TI: Aspectos Jurídicos e Administrativos". UFSM-FW.</p>
+                                <p class="gallery-date">Outubro de 2017</p>
+                            </div>
+                        </a>
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1639111503666-56295742ed85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item mb-2"
+                                src="https://images.unsplash.com/photo-1639111503666-56295742ed85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                        </a>
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item mb-2"
+                            src="https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                        </a>
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item"
+                            src="https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                        </a>
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1639087595550-e9770a85f8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item"
+                                src="https://images.unsplash.com/photo-1639087595550-e9770a85f8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+                        </a>
+                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                            data-src="https://images.unsplash.com/photo-1639080494293-a6c409e3bb88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                            <img class="gallery-item"
+                                src="https://images.unsplash.com/photo-1639080494293-a6c409e3bb88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact position-relative">
+        <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-nude.png"
+            style="top:40px;left:180px;" />
+        <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
+            src="/assets/Logo-Comply4Tech-vertical2.png" style="top:350px;right:180px;" />
+        <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+                src="https://img.icons8.com/ios-filled/30/d9e1e2/menu--v1.png" /></button>
+        <div class="container-fluid">
+            <div class="row" data-aos="fade-right">
+                <div class="col-6 col-md-3 contact-text mb-5">
+                    <h2 class="text-uppercase pb-5 fw-normal contact-title">
+                        <div class="underline-contact">Contato</div>
+                    </h2>
+                    <p class="pt-5 contact-info">
+                        <span style="color: #eca154;">+ 55 51 3017 1236</span> <br>
+                        Rua Mostardeiro, 777 / 1401 <br>
+                        Bairro Rio Branco <br>
+                        Porto Alegre / RS / Brasil
+                    </p>
+                </div>
+                <form class="col-10 col-md-6 contact-text-form">
+                    <div class="d-flex mb-5 justify-content-between">
+                        <div class="col-5">
+                            <label class="mb-3" for="name" style="color: #eca154;">Nome Completo</label>
+                            <input type="text" required class="form-control p-3 rounded-0" name="name" />
+                        </div>
+
+                        <div class="col-6">
+                            <label class="mb-3" for="email" style="color: #eca154;">E-mail</label>
+                            <input type="email" required class="form-control p-3 rounded-0" name="email" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <label class="mb-3" for="message" style="color: #eca154;">Mensagem</label>
+                        <textarea type="text" required class="form-control rounded-0" name="message"
+                            rows="8"></textarea>
+                    </div>
+
+                    <button type="submit" class="text-uppercase p-2 ps-4 pe-4 btn rounded fw-bold"
+                        style="background: #eca154;">Enviar</button>
+
+                </form>
             </div>
         </div>
     </section>
@@ -138,6 +252,9 @@
             ...
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

@@ -10,3 +10,29 @@ for (let acting of actings) {
         this.style.fontWeight = 'normal'
     })
 }
+
+let workers = document.querySelectorAll('.worker-info')
+
+for (let worker of workers) {
+    worker.addEventListener('mouseover', function () {
+        this.style.opacity = '0.7'
+    })
+
+    worker.addEventListener('mouseleave', function () {
+        this.style.opacity = '0'
+    })
+}
+
+let galleries = document.querySelectorAll('.gallery-info')
+
+for (let gallery of galleries) {
+    gallery.addEventListener('mouseover', function () {
+        this.style.opacity = '0.7'
+    })
+
+    gallery.addEventListener('mouseleave', function () {
+        this.style.opacity = '0'
+    })
+}
+
+AOS.init();

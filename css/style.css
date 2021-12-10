@@ -132,6 +132,50 @@ body {
     color: #eca154;
 }
 
+.worker-info {
+    content:'';
+    width:100%;
+    height:100%;
+    background:#eca154;
+    opacity:0;
+    z-index: 9;
+}
+
+.gallery-info{
+    content:'';
+    width:97%;
+    top:50%;
+    transform:translateY(-50%);
+    height:152px;
+    background:#eca154;
+    opacity:0;
+    z-index: 9;
+}
+
+.worker-name {
+    color: #373a36;
+    z-index: 10;
+    opacity: 1 !important;
+}
+
+.worker-charge {
+    color: #ffffff;
+    z-index:10;
+    opacity: 1 !important;
+}
+
+.gallery-name {
+    color: #373a36;
+    z-index: 10;
+    opacity: 1 !important;
+}
+
+.gallery-date {
+    color: #ffffff;
+    z-index:10;
+    opacity: 1 !important;
+}
+
 .underline-workers {
     position: relative;
 }
@@ -230,8 +274,314 @@ body {
     display:block;
 }
 
+.events {
+    line-height: 110%;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: left;
+    background-color: #d9e1e2;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    overflow-y: hidden;
+}
+
+.events-text {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #373a36;
+}
+
+.events-title {
+    font-size: 8rem;
+    line-height: 110%;
+}
+
+.events-title {
+    position: relative;
+}
+
+.events-title::before {
+    position: absolute;
+    font-family: sans-serif;
+    content: "//";
+    left: -90px;
+    top: 5px;
+    color: #eca154;
+}
+
+.underline-events {
+    position: relative;
+}
+
+.underline-events::after {
+    position: absolute;
+    content: " ";
+    border: 1px solid #373a36;
+    background: #373a36;
+    width: 45%;
+    height: 6px;
+    left: 0;
+    bottom: -10px;
+}
+
+#gallery {
+    margin-left: 150px;
+}
+
+.gallery-item {
+    width: 480px;
+    height: 250px;
+}
+
+.contact {
+    line-height: 110%;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: left;
+    background-color: #373a36;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    overflow-y: hidden;
+}
+
+.contact-text,
+.contact-text-form {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #d9e1e2;
+}
+
+.contact-title {
+    font-size: 8rem;
+    line-height: 110%;
+}
+
+.contact-title {
+    position: relative;
+}
+
+.contact-title::before {
+    position: absolute;
+    font-family: sans-serif;
+    content: "//";
+    left: -90px;
+    top: 5px;
+    color: #eca154;
+}
+
+.underline-contact {
+    position: relative;
+}
+
+.underline-contact::after {
+    position: absolute;
+    content: " ";
+    border: 1px solid #d9e1e2;
+    background: #d9e1e2;
+    width: 90%;
+    height: 6px;
+    left: 0;
+    bottom: -10px;
+}
+
+.contact-info {
+    line-height: 140%;
+}
+
+@media(max-width: 1366px) {
+    .events .col-10 {
+        width: 40% !important;
+    }
+
+    .contact .col-10 {
+        width: 40% !important;
+    }
+
+    .comply-logo-vertical,
+    .btn-menu-comply {
+        right: 100px !important;
+    }
+
+    .comply-logo-vertical {
+        top: 300px !important;
+    }
+
+    .acting-text-list {
+        margin-left: 0px !important;
+    }
+
+    .workers-text {
+        margin-top: 150px !important;
+    }
+
+    .worker-member {
+        height: 250px !important;
+    }
+
+    .gallery-item {
+        width: 240px !important;
+        height: 150px !important;
+    }
+
+    .underline-contact::after {
+        height: 4px !important;
+    }
+}
+
 @media(max-width: 1400px) {
     body,html{
         font-size:0.6rem;
+    }
+}
+
+@media(min-width: 1401px) {
+    .gallery-info {
+        height: 250px !important;
+    }
+}
+
+@media(max-width: 765px) {
+    body,html {
+        font-size: 0.3rem;
+    }
+
+    .welcome-text {
+        margin-left: 0;
+        line-height: 150%;
+    }
+    
+    .enterprise {
+        overflow-x: hidden !important;
+    }
+
+    .enterprise-text {
+        margin-left: 50px;
+        line-height: 150%;
+    }
+
+    .comply-logo {
+        left: 10px !important;
+    }
+
+    .comply-logo-vertical {
+        top: 260px !important;
+        right: 10px !important;
+    }
+
+    .btn-menu-comply {
+        top:30px !important;
+        right: 10px !important;
+    }
+
+    .underline::after {
+        height:6px !important;
+    }
+
+    .enterprise-title::after {
+        height:4px !important;
+    }
+
+    .enterprise-title::before {
+        left: -30px !important;
+    }
+
+    .enterprise-text p {
+        font-size: 2.5rem;
+    }
+
+    .workers-text {
+        margin-left: 50px;
+        line-height: 150%;
+    }
+
+    .workers-title::before {
+        left: -30px !important;
+    }
+
+    .underline-workers::after {
+        height: 4px !important;
+        line-height: 150% !important;
+        width: 90% !important;
+    }
+
+    .acting {
+        overflow-x: hidden;
+    }
+
+    .acting-text {
+        margin-left: 50px;
+        line-height: 150%;
+    }
+
+    .acting-title::before {
+        left: -30px !important;
+    }
+
+    .underline-acting::after {
+        height: 4px !important;
+        line-height: 150% !important;
+        width: 90% !important;
+    }
+
+    .acting-text-list {
+        margin-left: 50px !important;
+        margin-top: 50px !important;
+        font-size: 2rem;
+    }
+
+    .events {
+        overflow-x: hidden;
+    }
+
+    .events-text {
+        margin-left: 50px;
+        line-height: 150%;
+    }
+
+    .events-title::before {
+        left: -30px !important;
+    }
+
+    .underline-events::after {
+        height: 4px !important;
+        line-height: 150% !important;
+        width: 90% !important;
+    }
+
+    .contact {
+        overflow-x: hidden;
+    }
+
+    .contact-text {
+        margin-left: 50px;
+        line-height: 150%;
+        font-size: 2rem;
+    }
+
+    .contact-title::before {
+        left: -30px !important;
+    }
+
+    .underline-events::after {
+        height: 4px !important;
+        line-height: 150% !important;
+        width: 90% !important;
+    }
+
+    .contact-text-form {
+        margin-left: 0 !important;
+        margin-top: 50px !important;
+        font-size: 2rem;
+    }
+
+    #gallery {
+        margin-left: 0 !important;
+    }
+
+    .contact .col-10 {
+        width: 80% !important;
+        margin-left: 15px !important;
     }
 }
