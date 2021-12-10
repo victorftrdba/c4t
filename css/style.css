@@ -1,0 +1,237 @@
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Space Mono',
+    monospace;
+}
+
+.welcome {
+    font-size: 18rem;
+    line-height: 110%;
+    background:url('/assets/Imagem-fundo-Home.jpg');
+    width:100vw;
+    height:100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+            overflow-y:hidden;
+}
+
+.welcome-text {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #373a36;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline-less::after {
+    width:60% !important;
+}
+
+.underline::after {
+    position:absolute;
+    content:" ";
+    border:1px solid #373a36;
+    background: #373a36;
+    width:75%;
+    height:10px;
+    left: 0;
+    bottom: 0;
+}
+
+.enterprise {
+    line-height: 110%;
+    background:url('/assets/Grafismos.png');
+    background-color: #d9e1e2;
+    width:100vw;
+    height:100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-size: 1.3rem;
+            overflow-y:hidden;
+}
+
+.enterprise h2 {
+    font-size: 8rem;
+}
+
+.enterprise-text {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #373a36;
+}
+
+.enterprise-text p {
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    color: #4d504d;
+    width: 68%;
+    line-height:130%;
+}
+
+.enterprise-title {
+    position:relative;
+}
+
+.enterprise-title::before {
+    position: absolute;
+    font-family: sans-serif;
+    content: "//";
+    left: -90px;
+    top: 5px;
+    color: #eca154;
+}
+
+.enterprise-title::after {
+    position:absolute;
+    content:" ";
+    border:1px solid #373a36;
+    background: #373a36;
+    width:57%;
+    height:6px;
+    left: 0;
+    bottom: 0;
+}
+
+.workers {
+    line-height: 110%;
+    background:url('/assets/Background-Verde.png');
+    width:100vw;
+    height:100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-size: 1.3rem;
+            overflow-y:hidden;
+}
+
+.workers-text {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #d9e1e2;
+}
+
+.workers-title {
+    font-size: 8rem;
+    line-height:110%;
+}
+
+.workers-title {
+    position: relative;
+}
+
+.workers-title::before {
+    position: absolute;
+    font-family: sans-serif;
+    content: "//";
+    left: -90px;
+    top: 5px;
+    color: #eca154;
+}
+
+.underline-workers {
+    position: relative;
+}
+
+.underline-workers-less::after {
+    width: 40% !important;
+}
+
+.underline-workers::after {
+    position: absolute;
+    content: " ";
+    border: 1px solid #d9e1e2;
+    background: #d9e1e2;
+    width: 50%;
+    height: 6px;
+    left: 0;
+    bottom: -10px;
+}
+
+.acting {
+    line-height: 110%;
+    background: url('/assets/Grafismos1.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position:left;
+    background-color: #eca154;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+            overflow-y:hidden;
+}
+
+.acting-text {
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #373a36;
+}
+
+.acting-text-list {
+    margin-top: 240px;
+    margin-left: 150px;
+    color: #373a36;
+    line-height:140%;
+}
+
+.acting-title {
+    font-size: 8rem;
+    line-height: 110%;
+}
+
+.acting-title {
+    position: relative;
+}
+
+.acting-title::before {
+    position: absolute;
+    font-family: sans-serif;
+    content: "//";
+    left: -90px;
+    top: 5px;
+    color: #ffffff;
+}
+
+.underline-acting {
+    position: relative;
+}
+
+.underline-acting-less::after {
+    width: 50% !important;
+}
+
+.underline-acting::after {
+    position: absolute;
+    content: " ";
+    border: 1px solid #373a36;
+    background: #373a36;
+    width: 45%;
+    height: 6px;
+    left: 0;
+    bottom: -10px;
+}
+
+.arrow-hover-effect {
+    position:relative;
+}
+
+.arrow-hover-effect:before {
+    position:absolute;
+    left: -40px;
+    content:"➜";
+    display:none;
+    color:#ffffff;
+}
+
+.arrow-hover-effect:hover:before {
+    display:block;
+}
+
+@media(max-width: 1400px) {
+    body,html{
+        font-size:0.6rem;
+    }
+}
