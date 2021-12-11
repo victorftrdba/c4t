@@ -40,4 +40,31 @@ function hiddenOffcanvas() {
     document.querySelector('.offcanvas').style.visibility = 'hidden'
 }
 
+var swiper = new Swiper(".mySwiper", {
+    grabCursor: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            slidesPerColumn: 3,
+            slidesPerGroup: 2,
+            grid: {
+                rows: 3,
+            },
+        },
+        1024: {
+            slidesPerView: 3,
+            slidesPerColumn: 3,
+            slidesPerGroup: 3,
+            grid: {
+                rows: 2,
+            },
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
+
 AOS.init();
