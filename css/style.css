@@ -1,6 +1,6 @@
 html,
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Space Mono',
     monospace;
 }
@@ -14,6 +14,11 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
             overflow-y:hidden;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: 0 0 0 0 transparent !important;
 }
 
 .welcome-text {
@@ -59,7 +64,7 @@ body {
 }
 
 .enterprise-text {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 150px;
     color: #373a36;
 }
@@ -421,7 +426,7 @@ body {
     }
 
     .gallery-item {
-        width: 240px !important;
+        width: 220px !important;
         height: 150px !important;
     }
 
@@ -445,12 +450,24 @@ body {
         height: 250px !important;
     }
 
+    .welcome-text {
+        margin-top: 150px !important;
+    }
+
     .comply-logo-vertical {
         right:100px !important;
     }
 
     .btn-menu-comply {
         right: 100px !important;
+    }
+
+    p {
+        width: 100% !important;
+    }
+
+    h2 {
+        font-size: 7rem !important;
     }
 }
 
@@ -471,6 +488,7 @@ body {
     .enterprise-text {
         margin-left: 50px;
         line-height: 150%;
+        margin-top: 150px !important;
     }
 
     .comply-logo {
@@ -540,7 +558,7 @@ body {
     .acting-text-list {
         margin-left: 50px !important;
         margin-top: 50px !important;
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     .events {
@@ -606,5 +624,89 @@ body {
 
     #gallery {
         margin-left: 150px !important;
+    }
+}
+
+@media (width: 1024px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .btn-menu-comply,
+    .comply-logo-vertical {
+        right: 10px !important;
+    }
+
+    p {
+        width: 100% !important;
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (width: 768px) {
+    html,
+    body {
+        overflow-x:hidden;
+    }
+
+    .gallery-scroll {
+        margin-left: 90px !important;
+    }
+
+    .btn-menu-comply,
+    .comply-logo-vertical {
+        right: 10px !important;
+    }
+
+    .comply-logo {
+        left: 50px !important;
+    }
+
+    .welcome-text {
+        margin-left: 30px !important;
+    }
+
+    .acting-text,
+    .events-text,
+    .contact-text,
+    .workers-text,
+    .enterprise-text {
+        margin-left: 90px !important;
+    }
+
+    h2 {
+        font-size: 6.5rem !important;
+    }
+    .contact-text,
+    .contact-text-form {
+        margin-left: 100px !important;
+    }
+
+    p {
+        width: 100% !important;
+        font-size: 1.6rem !important;
+    }
+}
+
+@media(min-height: 1240px) and (width:1024px) {
+    .welcome,
+    .acting,
+    .contact,
+    .events,
+    .enterprise,
+    .workers {
+        height: 50vh !important;
+    }
+}
+
+@media(min-height: 1024px) and (max-height: 1239px) {
+    .welcome,
+    .acting,
+    .contact,
+    .events,
+    .enterprise,
+    .workers {
+        height: 75vh !important;
     }
 }
