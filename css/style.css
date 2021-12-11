@@ -738,3 +738,9 @@ body {
         right: 10px !important;
     }
 }
+
+@media (width: 768px) and (height: 1024px) {
+    #gallery {
+        margin-left: 90px !important;
+    }
+}
