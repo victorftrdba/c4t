@@ -615,6 +615,19 @@ body {
         width: 80% !important;
         margin-left: 15px !important;
     }
+
+    .btn-orange-submit {
+        font-size: 2rem;
+    }
+
+    .gallery-item {
+        width: 130px !important;
+        height: 100px !important;
+    }
+
+    #gallery {
+        margin-left: 20px;
+    }
 }
 
 @media(min-width: 1367px) and (max-width: 2400px) {
@@ -708,5 +721,20 @@ body {
     .enterprise,
     .workers {
         height: 75vh !important;
+    }
+}
+
+@media (width: 1440px) {
+    .gallery-item {
+        width: 250px !important;
+        height: 150px !important;
+    }
+
+    .btn-menu-comply {
+        right: 10px !important;
+    }
+
+    .comply-logo-vertical {
+        right: 10px !important;
     }
 }
