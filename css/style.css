@@ -8,7 +8,7 @@ body {
 .welcome {
     font-size: 18rem;
     line-height: 110%;
-    background:url('/assets/Imagem-fundo-Home.jpg');
+    background:url('../assets/Imagem-fundo-Home.jpg');
     width:100vw;
     height:100vh;
     background-size:cover;
@@ -43,7 +43,7 @@ body {
 
 .enterprise {
     line-height: 110%;
-    background:url('/assets/Grafismos.png');
+    background:url('../assets/Grafismos.png');
     background-color: #d9e1e2;
     width:100vw;
     height:100vh;
@@ -99,7 +99,7 @@ body {
 
 .workers {
     line-height: 110%;
-    background:url('/assets/Background-Verde.png');
+    background:url('../assets/Background-Verde.png');
     width:100vw;
     height:100vh;
     background-size:cover;
@@ -197,7 +197,7 @@ body {
 
 .acting {
     line-height: 110%;
-    background: url('/assets/Grafismos1.png');
+    background: url('../assets/Grafismos1.png');
     width: 100vw;
     height: 100vh;
     background-size: cover;
