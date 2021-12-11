@@ -35,4 +35,9 @@ for (let gallery of galleries) {
     })
 }
 
+function hiddenOffcanvas() {
+    document.querySelector('.modal-backdrop').style.display = 'none'
+    document.querySelector('.offcanvas').style.visibility = 'hidden'
+}
+
 AOS.init();

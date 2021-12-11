@@ -287,7 +287,7 @@ body {
 }
 
 .events-text {
-    margin-top: 200px;
+    margin-top: 170px;
     margin-left: 150px;
     color: #373a36;
 }
@@ -434,11 +434,23 @@ body {
     body,html{
         font-size:0.6rem;
     }
+
+    .offcanvas-body {
+        font-size: 1.2rem !important;
+    }
 }
 
 @media(min-width: 1401px) {
     .gallery-info {
         height: 250px !important;
+    }
+
+    .comply-logo-vertical {
+        right:100px !important;
+    }
+
+    .btn-menu-comply {
+        right: 100px !important;
     }
 }
 
@@ -576,12 +588,23 @@ body {
         font-size: 2rem;
     }
 
-    #gallery {
-        margin-left: 0 !important;
+    .gallery-scroll {
+        overflow-x: scroll !important;
+        margin-left: 50px !important;
     }
 
     .contact .col-10 {
         width: 80% !important;
         margin-left: 15px !important;
+    }
+}
+
+@media(min-width: 1367px) and (max-width: 2400px) {
+    .gallery-item {
+        width: 350px !important;
+    }
+
+    #gallery {
+        margin-left: 150px !important;
     }
 }

@@ -18,13 +18,13 @@
 
 <body>
 
-    <section class="welcome position-relative">
+    <section class="welcome position-relative" id="welcome">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
             src="/assets/Logo-Comply4Tech-vertical1.png" style="top:350px;right:180px;" />
         <button class="btn position-absolute btn-menu-comply" style="top:50px;right:180px;z-index:1000;" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" id="open-offcanvas"><img
                 src="https://img.icons8.com/ios-filled/30/373a36/menu--v1.png" /></button>
         <div class="container-fluid">
             <div class="row" data-aos="fade-right">
@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <section class="enterprise position-relative">
+    <section class="enterprise position-relative" id="enterprise">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <section class="workers position-relative">
+    <section class="workers position-relative" id="workers">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-nude.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
@@ -92,7 +92,8 @@
                         </div>
                         <div class="worker-member position-relative"
                             style="background:url('/assets/Foto3.png');background-repeat:no-repeat;background-size:cover;background-position:center;height:340px;width:540px;">
-                            <div class="position-absolute text-center text-uppercase worker-info d-flex flex-column justify-content-center align-items-center fw-bold">
+                            <div
+                                class="position-absolute text-center text-uppercase worker-info d-flex flex-column justify-content-center align-items-center fw-bold">
                                 <p class="worker-name mb-0">Aline Cafruni Gularte</p>
                                 <p class="worker-charge">Consultora Externa</p>
                             </div>
@@ -107,7 +108,7 @@
         </div>
     </section>
 
-    <section class="acting position-relative">
+    <section class="acting position-relative" id="acting">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-branco.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
@@ -137,7 +138,7 @@
         </div>
     </section>
 
-    <section class="events position-relative">
+    <section class="events position-relative" id="events">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-verde.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
@@ -147,54 +148,60 @@
                 src="https://img.icons8.com/ios-filled/30/373a36/menu--v1.png" /></button>
         <div class="container-fluid">
             <div class="row" data-aos="fade-right">
-                <div class="col-6 events-text mb-3">
+                <div class="col-6 events-text mb-5 mb-md-0">
                     <h2 class="text-uppercase mb-5 fw-normal events-title">
                         <div class="underline-events">Eventos</div>
                     </h2>
                 </div>
-                <div class="col-8 col-lg-11 col-xl-8">
-                    <div id="gallery">
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                <div class="col-8 col-lg-11 mt-5 mt-md-0 col-xl-8">
+                    <div class="d-flex d-lg-block gallery-scroll mb-4" id="gallery">
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Palestra 'Startups e Empresas de TI: Aspectos Jurídicos e
+                                    Administrativos'. UFSM-FW.</b> <br /> Outubro de 2017</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1639084695940-40546c3262c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item mb-2"
+                            <img class="gallery-item mb-2 shadow"
                                 src="https://images.unsplash.com/photo-1639084695940-40546c3262c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-                            <div class="position-absolute text-uppercase text-center gallery-info d-flex flex-column justify-content-center align-items-center fw-bold">
-                                <p class="gallery-name mb-0">Palestra "Startups e Empresas de TI: Aspectos Jurídicos e Administrativos". UFSM-FW.</p>
+                            <div
+                                class="position-absolute text-uppercase text-center gallery-info d-flex flex-column justify-content-center align-items-center fw-bold">
+                                <p class="gallery-name mb-0">Palestra "Startups e Empresas de TI: Aspectos Jurídicos e
+                                    Administrativos". UFSM-FW.</p>
                                 <p class="gallery-date">Outubro de 2017</p>
                             </div>
                         </a>
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Título!</b> <br /> Data</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1639111503666-56295742ed85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item mb-2"
+                            <img class="gallery-item mb-2 shadow"
                                 src="https://images.unsplash.com/photo-1639111503666-56295742ed85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
                         </a>
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Título!</b> <br /> Data</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item mb-2"
-                            src="https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                            <img class="gallery-item mb-2 shadow"
+                                src="https://images.unsplash.com/photo-1639128107506-21cb4c6a2f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
                         </a>
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Título!</b> <br /> Data</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item"
-                            src="https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                            <img class="gallery-item shadow"
+                                src="https://images.unsplash.com/photo-1638984849684-e646e7d9659c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
                         </a>
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Título!</b> <br /> Data</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1639087595550-e9770a85f8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item"
+                            <img class="gallery-item shadow"
                                 src="https://images.unsplash.com/photo-1639087595550-e9770a85f8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
                         </a>
-                        <a href="/" class="text-decoration-none position-relative" data-fancybox="single"
+                        <a href="/" class="text-decoration-none position-relative" data-caption="<span class='text-center' style='font-size:2.5rem;'><b>Título!</b> <br /> Data</span>" data-fancybox="single"
                             data-src="https://images.unsplash.com/photo-1639080494293-a6c409e3bb88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-                            <img class="gallery-item"
+                            <img class="gallery-item shadow"
                                 src="https://images.unsplash.com/photo-1639080494293-a6c409e3bb88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
                         </a>
                     </div>
+                </div>
+                <div class="d-block d-md-none" style="font-size: 2.5rem;margin-left:23px;">
+                    ⇎ Clique ou arraste para ver mais ⇎
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact position-relative">
+    <section class="contact position-relative" id="contact">
         <img data-aos="fade-right" class="position-absolute comply-logo" src="/assets/Logo-C4T-nude.png"
             style="top:40px;left:180px;" />
         <img data-aos="fade-up" class="position-absolute comply-logo-vertical"
@@ -245,11 +252,25 @@
     <div class="offcanvas offcanvas-top" style="height:100vh;width:100vw;" tabindex="-1" id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasTopLabel">Offcanvas top</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5></h5>
+            <a type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></a>
         </div>
         <div class="offcanvas-body">
-            ...
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="fw-bold text-uppercase mb-5" id="offcanvasTopLabel">Menu de Navegação</h5>
+                        <ul class="list-unstyled text-uppercase">
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#welcome">INÍCIO</a></li>
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#enterprise">A EMPRESA</a></li>
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#workers">EQUIPE / PARCEIROS</a></li>
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#acting">ÁREAS DE ATUAÇÃO</a></li>
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#events">EVENTOS</a></li>
+                            <li class="mb-3"><a class="text-decoration-none text-reset" onclick="hiddenOffcanvas()" href="#contact">CONTATO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
